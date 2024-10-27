@@ -14,7 +14,7 @@ function showImage(e){
 
 let imgElem = document.getElementsByTagName('img');
 
-for(i=0;i<imgElem.length;i++){
+for(let i=0;i<imgElem.length;i++){
     let e=imgElem[i];
     e.addEventListener('click',()=>{
         showImage(e);
