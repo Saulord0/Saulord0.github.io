@@ -68,8 +68,8 @@ img.fade-in{
     animation-direction: alternate;
 }
 img.fade-out{
-    width: 200px;
-    height: 90px;
+    /*width: 200px;
+    height: 90px;*/
     animation-duration: 3s;
     animation-name: fade-out;
     animation-iteration-count: 1;
