@@ -1,0 +1,106 @@
+.menu, a{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+span{
+    background-color: #333;
+    padding: 10px;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    border-radius: 5cap;
+}
+.experiencia{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    --col: 9.5rem;
+    --row: 8rem;
+    --gap: 2rem;
+  
+    display: grid;
+    grid-template-columns: repeat(3, var(--col));
+    grid-template-rows: repeat(4, var(--row));
+    grid-gap: var(--gap);
+}
+img{
+    height: 100px;
+}
+#imagen2{
+    height: 100px;
+    width: 200px;
+}
+.publicaciones{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    --col: 9.5rem;
+    --row: 8rem;
+    --gap: 2rem;
+  
+    display: grid;
+    grid-template-columns: repeat(2, var(--col));
+    grid-template-rows: repeat(2, var(--row));
+    grid-gap: var(--gap);
+}
+p::after{
+    content: "HOLA ";
+    /*display: block;*/
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+img.slide-in{
+    /*width: 200px;
+    height: 90px;*/
+    animation-duration: 3s;
+    animation-name: slide-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+img.fade-in{
+    /*width: 200px;
+    height: 90px;*/
+    animation-duration: 3s;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+img.fade-out{
+    width: 200px;
+    height: 90px;
+    animation-duration: 3s;
+    animation-name: fade-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes slide-in {
+    from{
+        translate: 150px;
+        scale: 200%;
+    }
+    to{
+        translate: 0px;
+        scale: 100%;
+    }
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+        display: none;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
