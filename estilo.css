@@ -1,7 +1,26 @@
+body{
+    background-image: url("img/IMG_20220511_202426.jpg");
+    background-size: cover;
+}
+*{
+    color: white;
+}
 .menu, a{
     color: white;
     padding: 10px;
     text-align: center;
+    padding: 50px;
+}
+.objetivo{
+    text-align: center;
+    /*background-color: rgb(238, 239, 194);*/
+}
+.descripcion{
+    text-align: justify;
+    font-style: oblique;
+}
+.texto{
+    padding: 50px;
 }
 span{
     background-color: #333;
@@ -26,7 +45,7 @@ span{
 img{
     height: 100px;
 }
-#imagen2{
+#icaycc{
     height: 100px;
     width: 200px;
 }
@@ -43,13 +62,12 @@ img{
     grid-template-rows: repeat(2, var(--row));
     grid-gap: var(--gap);
 }
-p::after{
+/*p::after{
     content: "HOLA ";
-    /*display: block;*/
     width: 100%;
     height: 1px;
     background-color: white;
-}
+}*/
 
 img.slide-in{
     /*width: 200px;
