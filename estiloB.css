@@ -1,0 +1,84 @@
+body{
+    background-image: url("img/IMG_20220511_202426.jpg");
+    background-size: cover;
+    color: white;
+    background-repeat: no-repeat;
+}
+h1{
+    position:relative;
+    left: 50%;
+}
+/*Estilo para el titulo de las secciones*/
+.seccion, h2{
+    position:relative;
+    left: 50%;
+    /*font-size: xx-large;*/
+}
+/*Apartado de estilo para el menu de navegacion*/
+.menu{
+    padding: 10px;
+    text-align: center;
+    padding: auto;
+    color: white;
+    text-decoration: none;
+}
+span{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5cap;
+    position:static;
+}
+.menu-texto{
+    color: #fcfff0;
+}
+/*Estilo de reticula para la seccion de experiencia*/
+.experiencia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 10px;
+}
+/*Estilo de las imagenes de experiencia*/
+.wp-image{
+    height: 120px;
+}
+#icaycc{
+    height: 100px;
+    width: 220px;
+}
+#dgpc{
+    height: 100px;
+    width: 220px;
+}
+/*Estilo del texto de experiencia*/
+#experiencia, texto{
+    text-align: justify;
+}
+/*espaciado entre elementos de experiencia*/
+.item{
+    padding-bottom: 100px;
+    padding-right: 100px;
+}
+/*Estilo negritas de las publicaciones y proyectos de ICAYCC*/
+.listaICAYCC{
+    font-weight: bold;
+}
+
+/*Animación del texto de cada experiencia*/
+.slide-text{
+    /*-webkit-animation: slide-text 0.5s ease-out alternate both;*/
+    display: none;
+    animation: slide-text 2s ease-out alternate both;
+}
+@keyframes slide-text {
+    0%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+}
