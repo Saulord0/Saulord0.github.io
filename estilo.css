@@ -33,13 +33,13 @@ span{
     color: white;
     padding: 10px;
     text-align: center;
-    --col: 9.5rem;
+    --col: 33%;
     --row: 8rem;
     --gap: 2rem;
   
     display: grid;
     grid-template-columns: repeat(3, var(--col));
-    grid-template-rows: repeat(4, var(--row));
+    grid-template-rows: repeat(2, var(--row));
     grid-gap: var(--gap);
 }
 img{
