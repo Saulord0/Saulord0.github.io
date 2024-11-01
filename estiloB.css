@@ -70,6 +70,7 @@ span{
     /*-webkit-animation: slide-text 0.5s ease-out alternate both;*/
     display: none;
     animation: slide-text 2s ease-out alternate both;
+    padding: 0;
 }
 @keyframes slide-text {
     0%{
